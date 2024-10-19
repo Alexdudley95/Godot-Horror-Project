@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://bt6k1up6y52dk"]
+
+[ext_resource type="PackedScene" uid="uid://x6jm5amtro3x" path="res://models/wallsmall.dae" id="1_q1ei4"]
+[ext_resource type="PackedScene" uid="uid://cesxi8kvv14bp" path="res://models/floormsall.dae" id="2_swwpc"]
+[ext_resource type="PackedScene" uid="uid://djm0b4iwp0lcn" path="res://models/windowsmall.dae" id="3_hl0sb"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="wallsmall" parent="." instance=ExtResource("1_q1ei4")]
+transform = Transform3D(2.8, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, 6)
+
+[node name="wallsmall2" parent="." instance=ExtResource("1_q1ei4")]
+transform = Transform3D(2.8, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, -6)
+
+[node name="floormsall" parent="." instance=ExtResource("2_swwpc")]
+transform = Transform3D(3, 0, 0, 0, 1.2, 0, 0, 0, 2.04, -18, 0, 11)
+
+[node name="windowsmall" parent="." instance=ExtResource("3_hl0sb")]
+transform = Transform3D(-8.74228e-08, 0, -1, 0, 1, 0, 2, 0, -4.37114e-08, -8, 0, 0)
+
+[node name="windowsmall2" parent="." instance=ExtResource("3_hl0sb")]
+transform = Transform3D(-8.74228e-08, 0, -1, 0, 1, 0, 2, 0, -4.37114e-08, 9, 0, 0)
