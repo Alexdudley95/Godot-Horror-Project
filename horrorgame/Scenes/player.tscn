@@ -1,0 +1,148 @@
+[gd_scene load_steps=9 format=3 uid="uid://hjsfv2j7ts3u"]
+
+[ext_resource type="Script" path="res://scripts/character_body_3d.gd" id="1_6ibej"]
+[ext_resource type="Script" path="res://scripts/camera_3d.gd" id="2_8rwba"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_61ufh"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0e3uu"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_68nk0"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_v6wu7"]
+font_size = 10
+outline_size = 1
+outline_color = Color(1, 0.180392, 0.152941, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_eicq4"]
+font_size = 7
+outline_size = 1
+outline_color = Color(0.985647, 0.572422, 0.634728, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_7c703"]
+font_size = 8
+
+[node name="player" type="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.923421, 0)
+script = ExtResource("1_6ibej")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("CapsuleMesh_61ufh")
+
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00258172, -0.0148278, -0.108882)
+collision_mask = 3
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.102642)
+shape = SubResource("CapsuleShape3D_0e3uu")
+
+[node name="Collider" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_68nk0")
+
+[node name="Neck" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.585064, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Neck"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0355339)
+fov = 50.0
+script = ExtResource("2_8rwba")
+period = 0.01
+magnitude = 5.0
+
+[node name="RayCast3D" type="RayCast3D" parent="Neck/Camera3D"]
+transform = Transform3D(0.963128, 0.016369, -9.14763e-05, -6.94756e-11, -0.0611073, -0.969856, -0.00484123, 3.25651, -0.0181986, 0.0102712, -0.0841626, 0.251097)
+collision_mask = 2
+collide_with_areas = true
+collide_with_bodies = false
+debug_shape_custom_color = Color(0.831373, 0.298039, 0.831373, 1)
+debug_shape_thickness = 1
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Neck/Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.281464, 0.0355339)
+visible = false
+light_color = Color(0.99895, 0.999999, 0.902645, 1)
+light_energy = 10.051
+light_size = 0.436
+shadow_enabled = true
+distance_fade_enabled = true
+spot_range = 13.671
+spot_attenuation = 0.7
+spot_angle = 20.28
+
+[node name="LightTimer" type="Timer" parent="Neck/Camera3D/SpotLight3D"]
+wait_time = 60.0
+
+[node name="LightTimer2" type="Timer" parent="Neck/Camera3D/SpotLight3D"]
+wait_time = 0.05
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "."
+horizontal_alignment = 1
+
+[node name="batAmmount" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+label_settings = SubResource("LabelSettings_v6wu7")
+
+[node name="Label2" type="Label" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -84.0
+offset_top = 29.0
+offset_right = 85.0
+offset_bottom = 102.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Picked up a battery"
+label_settings = SubResource("LabelSettings_eicq4")
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 131
+uppercase = true
+
+[node name="batTimer" type="Timer" parent="Label2"]
+
+[node name="objText" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -31.0
+offset_top = 16.0
+offset_right = 32.0
+offset_bottom = 39.0
+grow_horizontal = 2
+grow_vertical = 2
+label_settings = SubResource("LabelSettings_7c703")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel" type="Panel" parent="."]
+visible = false
+offset_left = 446.0
+offset_top = 2.0
+offset_right = 637.0
+offset_bottom = 494.0
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
+[connection signal="timeout" from="Neck/Camera3D/SpotLight3D/LightTimer" to="." method="_on_light_timer_timeout"]
+[connection signal="timeout" from="Neck/Camera3D/SpotLight3D/LightTimer2" to="." method="_on_light_timer_2_timeout"]
+[connection signal="timeout" from="Label2/batTimer" to="." method="_on_bat_timer_timeout"]

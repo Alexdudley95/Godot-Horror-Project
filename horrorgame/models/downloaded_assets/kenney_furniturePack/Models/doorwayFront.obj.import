@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://drutapptidbcl"
+path="res://.godot/imported/doorwayFront.obj-39787ad0adb38aeb2605fe88876081da.mesh"
+
+[deps]
+
+files=["res://.godot/imported/doorwayFront.obj-39787ad0adb38aeb2605fe88876081da.mesh"]
+
+source_file="res://models/downloaded_assets/kenney_furniturePack/Models/doorwayFront.obj"
+dest_files=["res://.godot/imported/doorwayFront.obj-39787ad0adb38aeb2605fe88876081da.mesh", "res://.godot/imported/doorwayFront.obj-39787ad0adb38aeb2605fe88876081da.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cps1uxnpv6bfx"
+path="res://.godot/imported/bathtub.obj-2a412e8fa0fdde4ec4efc1423bd43062.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bathtub.obj-2a412e8fa0fdde4ec4efc1423bd43062.mesh"]
+
+source_file="res://models/downloaded_assets/kenney_furniturePack/Models/bathtub.obj"
+dest_files=["res://.godot/imported/bathtub.obj-2a412e8fa0fdde4ec4efc1423bd43062.mesh", "res://.godot/imported/bathtub.obj-2a412e8fa0fdde4ec4efc1423bd43062.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

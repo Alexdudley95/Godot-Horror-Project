@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://c67go4b4el6u7"]
+
+[ext_resource type="Script" path="res://scripts/painting.gd" id="1_0y3t2"]
+[ext_resource type="Texture2D" uid="uid://bl67ftgkb64i" path="res://textures/paintings/painting_1.png" id="2_kygv6"]
+
+[node name="painting" type="Node3D"]
+script = ExtResource("1_0y3t2")
+
+[node name="Sprite3D" type="Sprite3D" parent="." groups=["texture_changeable"]]
+shaded = true
+texture = ExtResource("2_kygv6")

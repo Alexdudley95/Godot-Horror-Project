@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://dkeyljso4io1e"]
+
+[ext_resource type="Script" path="res://scripts/batteries.gd" id="1_8uvng"]
+[ext_resource type="Script" path="res://scripts/interaction_area.gd" id="1_57mf5"]
+[ext_resource type="Texture2D" uid="uid://bcbbio72wd3lf" path="res://textures/batteries.png" id="2_qpxuu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fpbr1"]
+size = Vector3(0.635132, 0.692383, 0.715332)
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.529912, 0)
+script = ExtResource("1_8uvng")
+
+[node name="Area3D" type="Area3D" parent="."]
+collision_layer = 2
+script = ExtResource("1_57mf5")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.02948, 0.0219727, 0.142334)
+shape = SubResource("BoxShape3D_fpbr1")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+billboard = 1
+shaded = true
+texture = ExtResource("2_qpxuu")
+
+[connection signal="hasBeenHit" from="Area3D" to="." method="_on_area_3d_has_been_hit"]
+[connection signal="notHit" from="Area3D" to="." method="_on_area_3d_not_hit"]

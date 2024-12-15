@@ -1,0 +1,14 @@
+Panel
+Sprite3D
+CollisionShape3D
+Area3D
+Label
+RayCast3D
+RigidBody3D
+MeshInstance3D
+OmniLight3D
+Node
+Timer
+SpotLight3D
+ResourcePreloader
+AnimationPlayer

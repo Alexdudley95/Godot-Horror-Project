@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://th3i2uhcd606"
+path="res://.godot/imported/plantSmall2.obj-9b9ed8ca976a8bf384f72d7591a094ec.mesh"
+
+[deps]
+
+files=["res://.godot/imported/plantSmall2.obj-9b9ed8ca976a8bf384f72d7591a094ec.mesh"]
+
+source_file="res://models/downloaded_assets/kenney_furniturePack/Models/plantSmall2.obj"
+dest_files=["res://.godot/imported/plantSmall2.obj-9b9ed8ca976a8bf384f72d7591a094ec.mesh", "res://.godot/imported/plantSmall2.obj-9b9ed8ca976a8bf384f72d7591a094ec.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

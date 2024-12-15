@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dq2tgvsbxw0xk"
+path="res://.godot/imported/bathroomCabinet.obj-0590022416a41806cc2e57fe26f985aa.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bathroomCabinet.obj-0590022416a41806cc2e57fe26f985aa.mesh"]
+
+source_file="res://models/downloaded_assets/kenney_furniturePack/Models/bathroomCabinet.obj"
+dest_files=["res://.godot/imported/bathroomCabinet.obj-0590022416a41806cc2e57fe26f985aa.mesh", "res://.godot/imported/bathroomCabinet.obj-0590022416a41806cc2e57fe26f985aa.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

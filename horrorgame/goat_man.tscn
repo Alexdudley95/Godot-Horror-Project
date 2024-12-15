@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://bwk6xylveh0pr"]
+
+[ext_resource type="PackedScene" uid="uid://depxfdumlvo7v" path="res://models/Goat Man.fbx" id="1_y15mn"]
+
+[node name="Goat Man" instance=ExtResource("1_y15mn")]
+
+[node name="Light" parent="." index="0"]
+visible = false
+
+[node name="Skeleton3D" parent="metarig" index="0"]
+bones/6/rotation = Quaternion(-0.500447, -0.439689, 0.48157, 0.569488)
+bones/9/rotation = Quaternion(-0.334263, 0.650761, -0.605749, 0.312805)
+bones/16/rotation = Quaternion(-0.162203, -0.620862, 0.731236, 0.231334)
+bones/22/rotation = Quaternion(-9.36979e-08, 0.696936, 0.717133, -9.4622e-08)
+bones/24/rotation = Quaternion(-9.36979e-08, 0.696936, 0.717133, -9.4622e-08)
+bones/26/rotation = Quaternion(0.232181, 0.787577, 0.367245, -0.436974)
+bones/33/rotation = Quaternion(0.0391348, 0.960452, -0.275454, -0.0112239)
+
+[node name="AnimationPlayer" parent="." index="3"]
+reset_on_save = false
+playback_auto_capture = false

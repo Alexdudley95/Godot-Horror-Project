@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b8gk4y0y1pbls"
+path="res://.godot/imported/books.obj-13440159b7846e9a12a33e72518c38c5.mesh"
+
+[deps]
+
+files=["res://.godot/imported/books.obj-13440159b7846e9a12a33e72518c38c5.mesh"]
+
+source_file="res://models/downloaded_assets/kenney_furniturePack/Models/books.obj"
+dest_files=["res://.godot/imported/books.obj-13440159b7846e9a12a33e72518c38c5.mesh", "res://.godot/imported/books.obj-13440159b7846e9a12a33e72518c38c5.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dt1ek5kq6mo2q"
+path="res://.godot/imported/tableCoffee.obj-9c61a23c0fb5c9201b2f59b6940a7df5.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tableCoffee.obj-9c61a23c0fb5c9201b2f59b6940a7df5.mesh"]
+
+source_file="res://models/downloaded_assets/kenney_furniturePack/Models/tableCoffee.obj"
+dest_files=["res://.godot/imported/tableCoffee.obj-9c61a23c0fb5c9201b2f59b6940a7df5.mesh", "res://.godot/imported/tableCoffee.obj-9c61a23c0fb5c9201b2f59b6940a7df5.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

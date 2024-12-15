@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://slvgerh7xkkt"]
+
+[ext_resource type="PackedScene" uid="uid://x6jm5amtro3x" path="res://models/wallsmall.dae" id="1_qisus"]
+[ext_resource type="Texture2D" uid="uid://cipc3katp7co7" path="res://textures/concrete.png" id="2_qf2ui"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jhb51"]
+albedo_texture = ExtResource("2_qf2ui")
+normal_enabled = true
+normal_scale = 8.19
+heightmap_scale = 16.0
+refraction_scale = -0.13
+texture_filter = 0
+texture_repeat = false
+
+[node name="wallsmall" instance=ExtResource("1_qisus")]
+
+[node name="Wall" parent="." index="0"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 0.3, -0.132744, 3, 0)
+material_override = SubResource("StandardMaterial3D_jhb51")

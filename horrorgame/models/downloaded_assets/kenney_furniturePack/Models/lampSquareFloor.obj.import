@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cbx6k2o4po54w"
+path="res://.godot/imported/lampSquareFloor.obj-b0e24fd5c1b3fa44f3d7641c57e673f7.mesh"
+
+[deps]
+
+files=["res://.godot/imported/lampSquareFloor.obj-b0e24fd5c1b3fa44f3d7641c57e673f7.mesh"]
+
+source_file="res://models/downloaded_assets/kenney_furniturePack/Models/lampSquareFloor.obj"
+dest_files=["res://.godot/imported/lampSquareFloor.obj-b0e24fd5c1b3fa44f3d7641c57e673f7.mesh", "res://.godot/imported/lampSquareFloor.obj-b0e24fd5c1b3fa44f3d7641c57e673f7.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
